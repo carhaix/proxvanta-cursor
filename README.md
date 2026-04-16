@@ -1,6 +1,10 @@
-# ProxVanta For Cursor
+# <img src="https://www.proxvanta.com/brand/proxvanta-icon-64px-clipped.png" alt="ProxVanta Logo" width="50" style="vertical-align: -0.18em;" /> ProxVanta For Cursor
 
-This repo exists to get ProxVanta working in Cursor.
+[Website](https://www.proxvanta.com) | [App](https://app.proxvanta.com)
+
+Install ProxVanta to Cursor today so you can get working on your teams shared contexts and workflows.
+
+You will need a ProxVanta account before connecting ProxVanta to Cursor ([it's free!](https://app.proxvanta.com)).
 
 ## Quick Start
 
