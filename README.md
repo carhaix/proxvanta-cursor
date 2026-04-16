@@ -12,9 +12,15 @@ bash scripts/install-to-cursor.sh
 
 2. Restart Cursor.
 
-3. In Cursor, connect ProxVanta when prompted.
+3. In Cursor, click `Connect` when ProxVanta shows `Needs authentication`.
 
-4. Then try:
+4. Cursor opens the ProxVanta sign-in and approval flow in your browser.
+
+5. If you are not already signed in, sign in on `app.proxvanta.com`, then approve the connection.
+
+6. Return to Cursor after the browser flow completes.
+
+7. Then try:
 
 ```text
 Use ProxVanta to list the available Agent Contexts.
@@ -53,5 +59,15 @@ Use ProxVanta to route this launch plan through the right Agent Contexts.
 This Cursor package is OAuth-first.
 
 Cursor should discover the ProxVanta MCP OAuth metadata from `https://api.proxvanta.com/mcp` and open the sign-in flow automatically.
+
+The expected connect flow is:
+
+1. Cursor reaches `https://api.proxvanta.com/mcp`
+2. ProxVanta advertises MCP OAuth metadata
+3. Cursor opens the browser
+4. The browser is redirected into the ProxVanta app auth flow
+5. If the user is not logged in, they sign in first
+6. The user approves the MCP connection
+7. Cursor completes the OAuth callback and enables ProxVanta tools
 
 If you intentionally need a non-OAuth fallback for another client or local debugging, that should be documented separately from this Cursor package.
