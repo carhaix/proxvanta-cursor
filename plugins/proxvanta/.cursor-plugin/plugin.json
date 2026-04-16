@@ -1,0 +1,34 @@
+{
+  "name": "proxvanta",
+  "version": "0.1.0",
+  "description": "Use your team's Agent Contexts and backlog context through the ProxVanta MCP server.",
+  "author": {
+    "name": "ProxVanta",
+    "email": "support@proxvanta.com",
+    "url": "https://proxvanta.com"
+  },
+  "homepage": "https://proxvanta.com",
+  "repository": "https://github.com/carhaix/proxvanta-cursor",
+  "license": "UNLICENSED",
+  "keywords": ["cursor", "mcp", "agent-contexts", "backlog", "design", "productivity"],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "interface": {
+    "displayName": "ProxVanta",
+    "shortDescription": "Agentify product execution across code, backlog, and design.",
+    "longDescription": "Connect ProxVanta in Cursor so teams can load Agent Contexts into a thread, inspect setup readiness, and route one-shot work through product-aware MCP tools. ProxVanta uses the hosted MCP endpoint and your organization API key.",
+    "developerName": "ProxVanta",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "MCP", "Agent Contexts"],
+    "websiteURL": "https://proxvanta.com",
+    "privacyPolicyURL": "https://www.proxvanta.com/privacy",
+    "termsOfServiceURL": "https://www.proxvanta.com/terms",
+    "defaultPrompt": [
+      "Use ProxVanta to list the available Agent Contexts.",
+      "Use ProxVanta designer to review this flow.",
+      "Use ProxVanta to route this feature context through the right Agent Contexts."
+    ],
+    "brandColor": "#8B5CF6",
+    "screenshots": []
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "proxvanta": {
+      "type": "streamable_http",
+      "url": "https://api.proxvanta.com/mcp"
+    }
+  }
+}
