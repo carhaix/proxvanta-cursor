@@ -1,11 +1,11 @@
 ---
 name: proxvanta
-description: Use when the user wants Cursor to invoke ProxVanta as an MCP-backed app/tool surface, such as `Use ProxVanta designer review this flow`, `Use pv designer review this flow`, `Use ProxVanta designer+growth-lead review this flow`, or `Use pv designer+growth-lead review this flow`. Prefer ProxVanta operations like listing Agent Contexts and loading agent context over treating the text as plain English.
+description: Use when the user wants Cursor to invoke ProxVanta as an MCP-backed app/tool surface, such as `use ProxVanta designer review this flow`, `use pv designer review this flow`, `use ProxVanta designer+growth-lead review this flow`, or `use pv designer+growth-lead review this flow`. Prefer ProxVanta operations like listing Agent Contexts and loading agent context over treating the text as plain English.
 ---
 
 # ProxVanta
 
-Use this skill when the user wants Cursor to invoke ProxVanta first, then carry out work with ProxVanta context loaded. Treat both `Use ProxVanta ...` and `Use pv ...` as valid invocation forms for the same MCP-backed tool surface.
+Use this skill when the user wants Cursor to invoke ProxVanta first, then carry out work with ProxVanta context loaded. Treat both `use ProxVanta ...` and `use pv ...` as valid invocation forms for the same MCP-backed tool surface.
 
 This skill is for the packaged ProxVanta plugin surface in Cursor.
 

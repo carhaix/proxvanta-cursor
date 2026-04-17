@@ -41,6 +41,5 @@ Next:
 1. Restart Cursor.
 2. Complete the ProxVanta sign-in flow if Cursor prompts you.
 3. Ask Cursor:
-   Use ProxVanta to list the available Agent Contexts.
-   Use pv to list the available Agent Contexts.
+   use ProxVanta list the available Agent Contexts.
 EOF

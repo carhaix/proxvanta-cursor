@@ -24,12 +24,9 @@
     "privacyPolicyURL": "https://www.proxvanta.com/privacy",
     "termsOfServiceURL": "https://www.proxvanta.com/terms",
     "defaultPrompt": [
-      "Use ProxVanta to list the available Agent Contexts.",
-      "Use pv to list the available Agent Contexts.",
-      "Use ProxVanta designer to review this flow.",
-      "Use pv designer to review this flow.",
-      "Use ProxVanta to route this feature context through the right Agent Contexts.",
-      "Use pv to route this feature context through the right Agent Contexts."
+      "use ProxVanta to list the available Agent Contexts.",
+      "use ProxVanta designer to review this flow.",
+      "use ProxVanta to route this feature context through the right Agent Contexts."
     ],
     "brandColor": "#8B5CF6",
     "screenshots": []
