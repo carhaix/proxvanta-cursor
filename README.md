@@ -14,66 +14,65 @@ You will need a ProxVanta account before connecting ProxVanta to Cursor ([it's f
 bash scripts/install-to-cursor.sh
 ```
 
-2. Restart Cursor.
-
-3. In Cursor, click `Connect` when ProxVanta shows `Needs authentication`.
-
-4. Cursor opens the ProxVanta sign-in and approval flow in your browser.
-
-5. If you are not already signed in, sign in on `app.proxvanta.com`, then approve the connection.
-
-6. Return to Cursor after the browser flow completes.
-
-7. Then try:
-
-```text
-use ProxVanta list the available Agent Contexts.
-```
-
-## Commands
+2. Confirm the Cursor MCP config was written:
 
 ```bash
-# Install the ProxVanta MCP server into Cursor
-bash scripts/install-to-cursor.sh
-
-# Optional: confirm the Cursor MCP config was written
 cat ~/.cursor/mcp.json
 ```
 
-## MCP Endpoints
+3. Restart Cursor.
 
-- Production: `https://api.proxvanta.com/mcp`
+4. In Cursor, click `Connect` when ProxVanta shows `Needs authentication`.
 
-## Examples
+5. Cursor opens the ProxVanta sign-in and approval flow in your browser.
+
+6. If you are not already signed in, sign in on `app.proxvanta.com`, then approve the connection.
+
+7. Return to Cursor after the browser flow completes.
+
+## Commands
+
+After connecting ProxVanta in Cursor, you can use:
 
 ```text
+# list the Agent Contexts available to your team
+/list-agent-contexts
+
+# use one Agent Context for a focused task
+/agent-context designer review this onboarding flow
+
+# keep one Agent Context active for the current thread
+/agent-context-session engineer
+
+# team agent contexts up to tackle complex problems
+/agent-context product-manager+designer+growth+engineer review this onboarding flow and improve it so that we see less people dropping off
+
+# test out new updates to your context before pushing changes out to the team
+/agent-context designer@2 review these designs, do they align with the new styleguide?
+```
+
+## Skills
+
+After connecting ProxVanta in Cursor, you can also use:
+
+```text
+# list the Agent Contexts available to your team
 use ProxVanta list the available Agent Contexts.
+
+# use one Agent Context for a focused task
 use ProxVanta designer to review this onboarding flow.
-use ProxVanta growth-lead to find monetization opportunities in this pricing page.
-use ProxVanta route this launch plan through the right Agent Contexts.
+
+# keep one Agent Context active for the current thread
+use ProxVanta engineer in this thread for follow-up implementation work.
+
+# team agent contexts up to tackle complex problems
+use ProxVanta product-manager+designer+growth+engineer review this onboarding flow and improve it so that we see less people dropping off.
+
+# test out new updates to your context before pushing changes out to the team
+use ProxVanta designer@2 review these designs, do they align with the new styleguide?
+
+# use shorthand if you prefer a shorter invocation
+use pv engineer explain this auth change.
 ```
 
 You can also use shorthand like `use pv designer ...` or `use pv review these designs`.
-
-## Files
-
-- `scripts/install-to-cursor.sh`: installs ProxVanta into `~/.cursor/mcp.json`
-- `plugins/proxvanta`: standalone Cursor plugin package for production
-
-## OAuth
-
-This Cursor package is OAuth-first.
-
-Cursor should discover the ProxVanta MCP OAuth metadata from `https://api.proxvanta.com/mcp` and open the sign-in flow automatically.
-
-The expected connect flow is:
-
-1. Cursor reaches `https://api.proxvanta.com/mcp`
-2. ProxVanta advertises MCP OAuth metadata
-3. Cursor opens the browser
-4. The browser is redirected into the ProxVanta app auth flow
-5. If the user is not logged in, they sign in first
-6. The user approves the MCP connection
-7. Cursor completes the OAuth callback and enables ProxVanta tools
-
-If you intentionally need a non-OAuth fallback for another client or local debugging, that should be documented separately from this Cursor package.
