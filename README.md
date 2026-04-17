@@ -27,7 +27,7 @@ bash scripts/install-to-cursor.sh
 7. Then try:
 
 ```text
-Use ProxVanta to list the available Agent Contexts.
+use proxvanta to list the available Agent Contexts.
 ```
 
 ## Commands
@@ -47,11 +47,13 @@ cat ~/.cursor/mcp.json
 ## Examples
 
 ```text
-Use ProxVanta to list the available Agent Contexts.
-Use ProxVanta designer to review this onboarding flow.
-Use ProxVanta growth-lead to find monetization opportunities in this pricing page.
-Use ProxVanta to route this launch plan through the right Agent Contexts.
+use proxvanta to list the available Agent Contexts.
+use proxvanta designer to review this onboarding flow.
+use proxvanta growth-lead to find monetization opportunities in this pricing page.
+use proxvanta to route this launch plan through the right Agent Contexts.
 ```
+
+You can also use shorthand like `use pv designer ...` or `use pv to review these designs`.
 
 ## Files
 

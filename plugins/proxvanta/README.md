@@ -28,7 +28,9 @@ When the user clicks `Connect` in Cursor:
 ## Examples
 
 ```text
-Use ProxVanta to list the available Agent Contexts.
-Use ProxVanta designer to review this onboarding flow.
-Use ProxVanta to route this launch plan through the right Agent Contexts.
+use proxvanta to list the available Agent Contexts.
+use proxvanta designer to review this onboarding flow.
+use proxvanta to route this launch plan through the right Agent Contexts.
 ```
+
+You can also use shorthand like `use pv designer ...` or `use pv to review these designs`.
