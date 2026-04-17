@@ -1,4 +1,4 @@
-# <img src="https://www.proxvanta.com/brand/proxvanta-icon-64px-clipped.png" alt="ProxVanta Logo" width="50" style="vertical-align: -0.18em;" /> ProxVanta For Cursor
+# <img src="https://www.proxvanta.com/brand/proxvanta-icon-64px-clipped.png" alt="ProxVanta Logo" style="width: 1em; height: 1em; vertical-align: -0.12em;" /> ProxVanta For Cursor
 
 [Website](https://www.proxvanta.com) | [App](https://app.proxvanta.com)
 
