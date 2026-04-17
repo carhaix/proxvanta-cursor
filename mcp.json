@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "proxvanta": {
+    "ProxVanta": {
       "type": "streamable_http",
       "url": "https://api.proxvanta.com/mcp"
     }

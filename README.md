@@ -2,7 +2,7 @@
 
 [Website](https://www.proxvanta.com) | [App](https://app.proxvanta.com)
 
-Install ProxVanta to Cursor today so you can get working on your teams shared contexts and workflows.
+Install ProxVanta into Cursor today so you can get working on your teams shared contexts and workflows.
 
 You will need a ProxVanta account before connecting ProxVanta to Cursor ([it's free!](https://app.proxvanta.com)).
 
@@ -20,15 +20,21 @@ bash scripts/install-to-cursor.sh
 cat ~/.cursor/mcp.json
 ```
 
-3. Restart Cursor.
+3. Confirm the Cursor plugin bundle was installed:
 
-4. In Cursor, click `Connect` when ProxVanta shows `Needs authentication`.
+```bash
+find ~/.cursor/plugins/local/ProxVanta -maxdepth 2 -type f | sort
+```
 
-5. Cursor opens the ProxVanta sign-in and approval flow in your browser.
+4. Restart Cursor.
 
-6. If you are not already signed in, sign in on `app.proxvanta.com`, then approve the connection.
+5. In Cursor, click `Connect` when ProxVanta shows `Needs authentication`.
 
-7. Return to Cursor after the browser flow completes.
+6. Cursor opens the ProxVanta sign-in and approval flow in your browser.
+
+7. If you are not already signed in, sign in on `app.proxvanta.com`, then approve the connection.
+
+8. Return to Cursor after the browser flow completes.
 
 ## Commands
 
