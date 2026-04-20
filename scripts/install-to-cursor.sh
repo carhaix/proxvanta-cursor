@@ -7,7 +7,6 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 CURSOR_DIR="${HOME}/.cursor"
 CURSOR_PLUGIN_DIR="${CURSOR_DIR}/plugins/local/ProxVanta"
 MCP_FILE="${CURSOR_DIR}/mcp.json"
-TMP_FILE="$(mktemp)"
 
 mkdir -p "${CURSOR_DIR}" "$(dirname "${CURSOR_PLUGIN_DIR}")"
 rm -rf "${CURSOR_PLUGIN_DIR}"
@@ -22,38 +21,27 @@ cp -R \
   "${CURSOR_PLUGIN_DIR}/"
 
 if [ -f "${MCP_FILE}" ] && command -v jq >/dev/null 2>&1; then
+  TMP_FILE="$(mktemp)"
   jq '
     .mcpServers = (.mcpServers // {}) |
     del(.mcpServers.proxvanta) |
-    .mcpServers.ProxVanta = {
-      "type": "streamable_http",
-      "url": "https://api.proxvanta.com/mcp"
-    }
+    del(.mcpServers.ProxVanta)
   ' "${MCP_FILE}" > "${TMP_FILE}"
   mv "${TMP_FILE}" "${MCP_FILE}"
 elif [ -f "${MCP_FILE}" ]; then
-  echo "Error: ${MCP_FILE} already exists and jq is not installed."
-  echo "Install jq and rerun this script so it can safely merge the ProxVanta server entry."
-  exit 1
-else
-  cat > "${MCP_FILE}" <<'JSON'
-{
-  "mcpServers": {
-    "ProxVanta": {
-      "type": "streamable_http",
-      "url": "https://api.proxvanta.com/mcp"
-    }
-  }
-}
-JSON
+  echo "Warning: jq is not installed, so ${MCP_FILE} was not cleaned."
+  echo "If ProxVanta appears twice in MCP settings, install jq and rerun this script."
 fi
 
 cat <<'MSG'
 Installed ProxVanta for Cursor.
 
 This script installed:
-- MCP server config in ~/.cursor/mcp.json
 - Cursor plugin bundle in ~/.cursor/plugins/local/ProxVanta
+
+This script no longer adds a standalone ProxVanta entry to ~/.cursor/mcp.json.
+The plugin provides the ProxVanta MCP server on its own, which avoids duplicate
+ProxVanta entries in Cursor's MCP settings.
 
 Next:
 1. Restart Cursor.

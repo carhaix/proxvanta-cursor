@@ -14,27 +14,23 @@ You will need a ProxVanta account before connecting ProxVanta to Cursor ([it's f
 bash scripts/install-to-cursor.sh
 ```
 
-2. Confirm the Cursor MCP config was written:
-
-```bash
-cat ~/.cursor/mcp.json
-```
-
-3. Confirm the Cursor plugin bundle was installed:
+2. Confirm the Cursor plugin bundle was installed:
 
 ```bash
 find ~/.cursor/plugins/local/ProxVanta -maxdepth 2 -type f | sort
 ```
 
-4. Restart Cursor.
+3. Restart Cursor.
 
-5. In Cursor, click `Connect` when ProxVanta shows `Needs authentication`.
+4. In Cursor, click `Connect` when ProxVanta shows `Needs authentication`.
 
-6. Cursor opens the ProxVanta sign-in and approval flow in your browser.
+5. Cursor opens the ProxVanta sign-in and approval flow in your browser.
 
-7. If you are not already signed in, sign in on `app.proxvanta.com`, then approve the connection.
+6. If you are not already signed in, sign in on `app.proxvanta.com`, then approve the connection.
 
-8. Return to Cursor after the browser flow completes.
+7. Return to Cursor after the browser flow completes.
+
+ProxVanta is provided by the plugin bundle, so the installer does not add a separate `~/.cursor/mcp.json` server entry (avoids duplicate MCP entries).
 
 ## Commands
 
