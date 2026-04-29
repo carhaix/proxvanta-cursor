@@ -44,10 +44,10 @@ After connecting ProxVanta in Cursor, you can use:
 /agent-context designer review this onboarding flow
 
 # keep one Agent Context active for the current thread
-/agent-context-session engineer
+/agent-context-session software-engineer
 
 # team agent contexts up to tackle complex problems
-/agent-context product-manager+designer+growth+engineer review this onboarding flow and improve it so that we see less people dropping off
+/agent-context product-manager+designer+growth-lead+software-engineer review this onboarding flow and improve it so that we see less people dropping off
 
 # test out new updates to your context before pushing changes out to the team
 /agent-context designer@2 review these designs, do they align with the new styleguide?
@@ -65,16 +65,16 @@ use ProxVanta list the available Agent Contexts.
 use ProxVanta designer to review this onboarding flow.
 
 # keep one Agent Context active for the current thread
-use ProxVanta engineer in this thread for follow-up implementation work.
+use ProxVanta software-engineer in this thread for follow-up implementation work.
 
 # team agent contexts up to tackle complex problems
-use ProxVanta product-manager+designer+growth+engineer review this onboarding flow and improve it so that we see less people dropping off.
+use ProxVanta product-manager+designer+growth-lead+software-engineer review this onboarding flow and improve it so that we see less people dropping off.
 
 # test out new updates to your context before pushing changes out to the team
 use ProxVanta designer@2 review these designs, do they align with the new styleguide?
 
 # use shorthand if you prefer a shorter invocation
-use pv engineer explain this auth change.
+use pv software-engineer explain this auth change.
 ```
 
 You can also use shorthand like `use pv designer ...` or `use pv review these designs`.

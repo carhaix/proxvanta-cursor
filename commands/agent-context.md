@@ -7,7 +7,7 @@ Use this command when the user provides an Agent Context name and a task.
 
 Examples:
 - `/agent-context designer review this onboarding flow`
-- `/agent-context engineer explain this auth change`
+- `/agent-context software-engineer explain this auth change`
 - `/agent-context growth-lead find monetization opportunities in this pricing page`
 
 Call `proxvanta_use_agent_context` with:
