@@ -9,7 +9,7 @@ Examples:
 - `/agent-context-session software-engineer`
 - `/agent-context-session product-manager`
 
-Call `proxvanta_start_prompt_session` with:
+Call `proxvanta.agent-contexts.start-session` with:
 - `agentContextId`: the named Agent Context exactly as provided by the user
 
 After starting the session, confirm that the Agent Context session is active for the current thread.

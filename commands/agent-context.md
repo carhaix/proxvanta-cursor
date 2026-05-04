@@ -10,8 +10,8 @@ Examples:
 - `/agent-context software-engineer explain this auth change`
 - `/agent-context growth-lead find monetization opportunities in this pricing page`
 
-Call `proxvanta_use_agent_context` with:
+Call `proxvanta.agent-contexts.use` with:
 - `agentContextId`: the named Agent Context exactly as provided by the user
 - `prompt`: the remaining task text
 
-If the user only gives an Agent Context name and no task, ask for the task or use `proxvanta_get_agent_context` if the intent is to load reusable context only.
+If the user only gives an Agent Context name and no task, ask for the task or use `proxvanta.agent-contexts.get` if the intent is to load reusable context only.
